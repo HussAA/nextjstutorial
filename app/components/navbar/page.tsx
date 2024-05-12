@@ -1,55 +1,58 @@
 import React from 'react'
-
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 const Navbar = () => {
   return (
     <>
-      <div className="bg-gray-700 p-2">
-        <div className='text-slate-300 text-center font-bold uppercase'>free shipping on orders over $75</div>
+        {/* Above Navbar */}
+      <div className="bg-slate-700 p-2">
+        <div className='text-slate-100 text-center font-medium uppercase text-sm'>free shipping on orders over $75</div>
       </div>
-      <nav className="bg-gray-800 p-4 px-11">
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
+      <nav className="bg-slate-100 py-5 px-8">
+      <div className="flex justify-between items-center text-center">
         {/* Search */}
-        <div className="flex items-center">
-          <div className="mr-4 text-white">Search</div>
+        <div className="items-center">
+          <SearchIcon className=" text-black"/>
           {/* You can replace "Search" with an actual search input field */}
         </div>
 
         {/* Logo (Centered) */}
-        <div className="text-white font-bold text-4xl">Logo</div>
+        <div className="text-black font-medium text-4xl ms-6">[Business Name]</div>
 
         {/* Profile and Bag Icons (Right) */}
-        <div className="flex items-center">
-          <div className="mr-4 text-white">Profile</div>
+        <div className="items-center">
+          <PermIdentityOutlinedIcon className="text-black"/>
           {/* You can use icons for profile and bag */}
-          <div className="text-white">Bag</div>
+          <ShoppingBagOutlinedIcon className="text-black"/>
         </div>
       </div>
-      <div className="max-w-6xl items-center p-7">
+      <div className="items-center py-7">
        
-          <ul className='mx-auto flex justify-evenly'>
-            <li>
-              <a>New Arrivals</a>
+          <ul className='text-black flex justify-evenly'>
+            <li >
+              <a href='#'>New Arrivals</a>
             </li>
             <li>
-              <a>Bestsellers</a>
+              <a href='#'>Bestsellers</a>
             </li>
             <li>
-              <a>Exlusives</a>
+              <a href='#'>DU Exlusives</a>
             </li>
             <li>
-              <a>Clothing</a>
+              <a href='#'>Clothing</a>
             </li>
             <li>
-              <a>Dresses</a>
+              <a href='#'>Dresses</a>
             </li>
             <li>
-              <a>Shoes</a>
+              <a href='#'>Shoes</a>
             </li>
             <li>
-              <a>Accessories</a>
+              <a href='#'>Accessories</a>
             </li>
             <li>
-              <a>Sale</a>
+              <a href='#'>Sale</a>
             </li>
           </ul>
         
